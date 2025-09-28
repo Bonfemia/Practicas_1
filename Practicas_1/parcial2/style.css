@@ -1,0 +1,206 @@
+h1, h2, h3, h4, h5, h6, p, a, input, textarea {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    font-size: .85rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: #000000;
+
+}
+.search i{
+    font-size: 2rem;
+    color: #000000;
+    
+}
+.search button{
+    cursor: pointer;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: white;
+}
+
+aside{
+    padding: 2rem;
+    padding-right: 0;
+    color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    font-weight: 400;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: left;
+    align-content: left;
+    
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.boton-menu, a {
+    background-color: transparent;
+    border: 0;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: .85rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boton-menu.active{
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+
+.texto-footer {
+    color: burlywood;
+    font-size: 0.85rem;
+}
+
+main {
+    background-color: rgb(0, 0, 0);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.titulo-principal {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.contenedor-ofertas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.oferta {
+    padding: 2rem;
+}
+
+.imagen_dpto {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border-radius: 1rem;
+    gap: 2rem;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.dpto_detalle {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 50px;
+    background-color: burlywood;
+    color: black;
+    padding: .5res;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    gap: 0.25rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+}
+
+.dpto_titulo {
+    font-size: 1rem;
+}
+
+.dpto_consulta {
+    border: 0;
+    background-color: white;
+    color: blueviolet;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 2px solid var(color blueviolet);
+    transition: background-color .2s, color .2s;
+}
+
+.dpto_consulta:hover {
+    background-color:  rgb(196, 68, 68);
+    color: whitesmoke;
+}
+
+.texto {
+    color: white;
+
+}
+
+form {
+    max-width: 400px;
+    margin: 0;
+    color: white;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(196, 68, 68);
+}
+
+p {
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.textito {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: .5rem;
+}

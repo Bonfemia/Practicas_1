@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altos Inmobiliaria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="formulario.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">Altos</h1>
+            </header>
+
+            <nav>
+                <ul class="menu">
+                    <li><button class="boton-menu active"><i class="bi bi-buildings"></i> Nuestras Ofertas</button></li>
+                    <li><a href="dptos.html" class="boton-menu"><i class="bi bi-buildings"></i> Departamentos</a></li>
+                    <li><a href="casas.html" class="boton-menu"><i class="bi bi-buildings"></i> Casas</a></li>
+                    <li><a href="habitaciones.html" class="boton-menu"><i class="bi bi-buildings"></i> Habitaciones</a></li>
+                    <li><a href="sobre_nosotros.html" class="boton-menu"><i class="bi bi-buildings"></i> Sobre Nosotros</a></li>
+                    <li><button class="boton-menu"><i class="bi bi-buildings"></i> Ubicación</button></li>
+                </ul>
+            </nav>
+
+            <!-- Filtro de precios -->
+            <section id="filtrado" class="filtrado">
+                <div class="contenido-seccion">
+                    <h2>Filtrar por Precio</h2>
+                    <form id="formulario-filtrado">
+                        <label for="minPrecio">Precio mínimo:</label>
+                        <input type="number" id="minPrecio" />
+
+                        <label for="maxPrecio">Precio máximo:</label>
+                        <input type="number" id="maxPrecio" />
+
+                        <button type="button" id="filtrarBtn">Filtrar</button>
+                    </form>
+                </div>
+            </section>
+
+            <footer>
+                <p class="texto-footer">
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-envelope-at"></i> © altos.inmobiliaria@altosdptos.com
+                </p>
+            </footer>
+        </aside>
+
+        <main>
+            <h2 class="titulo-principal">INMOBILIARIA</h2>
+
+            <!-- Contenedor de ofertas -->
+            <div class="contenedor-ofertas">
+                <!-- Las ofertas se cargan dinámicamente con script.js -->
+            </div>
+
+            <!-- Formulario de contacto funcional -->
+            <section id="ContentFormulario" class="contacto">
+                <h2>Formulario de Contacto</h2>
+                <form id="formulario">
+                    <div class="form-group">
+                        <label for="Nombre">Nombre:</label>
+                        <input type="text" id="Nombre" name="Nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Telefono">Teléfono:</label>
+                        <input type="text" id="Telefono" name="Telefono" placeholder="Ej: 1123456789" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Email">Correo Electrónico:</label>
+                        <input type="email" id="Email" name="Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Mensaje">Mensaje:</label>
+                        <textarea id="Mensaje" name="Mensaje" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

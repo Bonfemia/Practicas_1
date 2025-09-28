@@ -1,0 +1,50 @@
+{
+    "ofertas": [
+      {
+        "tipo": "Departamentos",
+        "imagen": "img/dpto.png",
+        "precio": 90000
+      },
+      {
+        "tipo": "Casas",
+        "imagen": "img/dpto1.png",
+        "precio": 70000
+      },
+      {
+        "tipo": "Habitaciones",
+        "imagen": "img/dpto11.png",
+        "precio": 50000
+      },
+      {
+        "tipo": "Departamentos",
+        "imagen": "img/dpto2.png",
+        "precio": 40000
+      },
+      {
+        "tipo": "Casas",
+        "imagen": "img/casa2.png",
+        "precio": 75000
+      },
+      {
+        "tipo": "Habitaciones",
+        "imagen": "img/habitacion_hotel1.png",
+        "precio": 55000
+      },
+      {
+        "tipo": "Departamentos",
+        "imagen": "img/habitacion_hotel2.png",
+        "precio": 89000
+      },
+      {
+        "tipo": "Casas",
+        "imagen": "img/casa2.png",
+        "precio": 84000
+      },
+      {
+        "tipo": "Habitaciones",
+        "imagen": "img/habitacion_hotel1.png",
+        "precio": 73000
+      }
+    ]
+  }
+  
