@@ -1,3 +1,4 @@
+/* Reset básico */
 h1, h2, h3, h4, h5, h6, p, a, input, textarea {
     margin: 0;
 }
@@ -9,31 +10,31 @@ a {
     text-decoration: none;
     font-size: .85rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
 }
 
-.search{
+/* Barra de búsqueda */
+.search {
     display: flex;
     align-items: center;
     gap: .5rem;
     color: #000000;
-
 }
-.search i{
+.search i {
     font-size: 2rem;
     color: #000000;
-    
 }
-.search button{
+.search button {
     cursor: pointer;
 }
+
+/* Wrapper y sidebar */
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
     background-color: white;
 }
 
-aside{
+aside {
     padding: 2rem;
     padding-right: 0;
     color: rgb(0, 0, 0);
@@ -45,13 +46,12 @@ aside{
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     font-weight: 400;
     font-size: 1.3rem;
     display: flex;
     justify-content: left;
     align-content: left;
-    
 }
 
 .menu {
@@ -65,16 +65,14 @@ aside{
     background-color: transparent;
     border: 0;
     color: black;
-    font-size: 1rem;
+    font-size: .85rem;
     cursor: pointer;
     display: flex;
     gap: 1rem;
-    padding: 1rem;
-    font-size: .85rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.boton-menu.active{
+.boton-menu.active {
     background-color: rgb(0, 0, 0);
     color: wheat;
     width: 100%;
@@ -88,6 +86,7 @@ aside{
     font-size: 0.85rem;
 }
 
+/* Main y títulos */
 main {
     background-color: rgb(0, 0, 0);
     margin: 1rem;
@@ -101,6 +100,7 @@ main {
     margin-bottom: 2rem;
 }
 
+/* Ofertas */
 .contenedor-ofertas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -129,14 +129,11 @@ main {
     height: 50px;
     background-color: burlywood;
     color: black;
-    padding: .5res;
     border-radius: 1rem;
     margin-top: -2rem;
     position: relative;
     gap: 0.25rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-left: .5rem;
+    padding: .5rem;
 }
 
 .dpto_titulo {
@@ -151,18 +148,18 @@ main {
     text-transform: uppercase;
     border-radius: 2rem;
     cursor: pointer;
-    border: 2px solid var(color blueviolet);
+    border: 2px solid blueviolet;
     transition: background-color .2s, color .2s;
 }
 
 .dpto_consulta:hover {
-    background-color:  rgb(196, 68, 68);
+    background-color: rgb(196, 68, 68);
     color: whitesmoke;
 }
 
+/* Formularios y textos */
 .texto {
     color: white;
-
 }
 
 form {
@@ -200,7 +197,97 @@ p {
     justify-content: center;
     align-content: center;
     border-radius: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: .5rem;
+    padding: 1rem .5rem;
+}
+
+/* ------------------------------
+    MEDIA QUERIES RESPONSIVE
+--------------------------------*/
+
+@media (max-width: 1024px) {
+    .contenedor-ofertas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr; /* sidebar arriba, main abajo */
+    }
+
+    aside {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1rem;
+    }
+
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .contenedor-ofertas {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .oferta {
+        padding: 1rem;
+    }
+
+    .imagen_dpto, .dpto_detalle {
+        width: 90%;
+        height: auto;
+    }
+
+    form, .textito {
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+
+
+
+/* Botón de menú */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+/* Cuando la pantalla es pequeña */
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr; /* sidebar arriba, main abajo */
+    }
+
+    aside {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1rem;
+    }
+
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    /* Mostrar botón hamburger y ocultar menú inicialmente */
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
 }

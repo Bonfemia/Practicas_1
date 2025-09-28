@@ -15,14 +15,16 @@
             <h1 class="logo">Altos</h1>
         </header>
 
+        <div class="hamburger">&#9776;</div>
+
         <nav>
             <ul class="menu">
                 <li><a href="index.html" class="boton-menu"><i class="bi bi-buildings"></i> Nuestras Ofertas</a></li>
-                <li><a href="dptos.html" class="boton-menu">Departamentos</a></li>
-                <li><a href="casas.html" class="boton-menu active">Casas</a></li>
-                <li><a href="habitaciones.html" class="boton-menu">Habitaciones</a></li>
-                <li><a href="sobre_nosotros.html" class="boton-menu">Sobre Nosotros</a></li>
-                <li><button class="boton-menu"><i class="bi bi-buildings"></i> Ubicación</button></li>
+                <li><a href="dptos.html" class="boton-menu"><i class="bi bi-buildings"></i> Departamentos</a></li>
+                <li><a href="casas.html" class="boton-menu active"><i class="bi bi-buildings"></i> Casas</a></li>
+                <li><a href="habitaciones.html" class="boton-menu"><i class="bi bi-buildings"></i> Habitaciones</a></li>
+                <li><a href="sobre_nosotros.html" class="boton-menu"><i class="bi bi-buildings"></i> Sobre Nosotros</a></li>
+                <li><button class="boton-menu"><i class="bi bi-geo-alt"></i> Ubicación</button></li>
                 <li><a href="formulario.html" class="boton-menu"><i class="bi bi-whatsapp"></i> Formulario de Contacto</a></li>
             </ul>
         </nav>
@@ -68,6 +70,17 @@
         </div>
     </main>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector(".menu");
+
+    hamburger.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+});
+</script>
 
 </body>
 </html>
